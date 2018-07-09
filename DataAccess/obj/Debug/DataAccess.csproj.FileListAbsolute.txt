@@ -1,0 +1,6 @@
+F:\GitHubRepositories\PC_Test\DataAccess\bin\Debug\DataAccess.dll
+F:\GitHubRepositories\PC_Test\DataAccess\bin\Debug\DataAccess.pdb
+F:\GitHubRepositories\PC_Test\DataAccess\obj\Debug\DataAccess.csprojAssemblyReference.cache
+F:\GitHubRepositories\PC_Test\DataAccess\obj\Debug\DataAccess.csproj.CoreCompileInputs.cache
+F:\GitHubRepositories\PC_Test\DataAccess\obj\Debug\DataAccess.dll
+F:\GitHubRepositories\PC_Test\DataAccess\obj\Debug\DataAccess.pdb

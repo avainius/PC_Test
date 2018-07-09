@@ -1,0 +1,14 @@
+F:\GitHubRepositories\PC_Test\DataAccess.tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+F:\GitHubRepositories\PC_Test\DataAccess.tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+F:\GitHubRepositories\PC_Test\DataAccess.tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+F:\GitHubRepositories\PC_Test\DataAccess.tests\bin\Debug\DataAccess.tests.dll
+F:\GitHubRepositories\PC_Test\DataAccess.tests\bin\Debug\DataAccess.tests.pdb
+F:\GitHubRepositories\PC_Test\DataAccess.tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+F:\GitHubRepositories\PC_Test\DataAccess.tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+F:\GitHubRepositories\PC_Test\DataAccess.tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+F:\GitHubRepositories\PC_Test\DataAccess.tests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+F:\GitHubRepositories\PC_Test\DataAccess.tests\obj\Debug\DataAccess.tests.csprojAssemblyReference.cache
+F:\GitHubRepositories\PC_Test\DataAccess.tests\obj\Debug\DataAccess.tests.csproj.CoreCompileInputs.cache
+F:\GitHubRepositories\PC_Test\DataAccess.tests\obj\Debug\DataAccess.tests.csproj.CopyComplete
+F:\GitHubRepositories\PC_Test\DataAccess.tests\obj\Debug\DataAccess.tests.dll
+F:\GitHubRepositories\PC_Test\DataAccess.tests\obj\Debug\DataAccess.tests.pdb

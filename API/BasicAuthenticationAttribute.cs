@@ -14,6 +14,9 @@ namespace API
     public class BasicAuthenticationAttribute : AuthorizationFilterAttribute
     {
         private DataAccess.Interfaces.IServices.IUserService userService = new UserService();
+        private bool RequiresAdmin { get; set; }
+
+        public BasicAuthenticationAttribute(bool requiresAdmin = false) { RequiresAdmin = requiresAdmin; }
         public override void OnAuthorization(HttpActionContext actionContext)
         {
             if(actionContext.Request.Headers.Authorization == null)
@@ -29,7 +32,7 @@ namespace API
                 var password = loginDataArray[1];
                 var tempUser = new User() { Email = username, Password = password };
 
-                if (userService.Login(tempUser))
+                if (userService.Login(tempUser) && (!RequiresAdmin || (RequiresAdmin && userService.IsAdmin(tempUser))))
                 {
                     Thread.CurrentPrincipal = new GenericPrincipal(new GenericIdentity(username), null);
                 }

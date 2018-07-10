@@ -114,7 +114,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Compile Include="AdminAuthenticationAttribute.cs" />
     <Compile Include="BasicAuthenticationAttribute.cs" />
     <Compile Include="Controllers\ProjectController.cs" />
     <Compile Include="Controllers\HomeController.cs" />

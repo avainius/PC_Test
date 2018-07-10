@@ -12,7 +12,7 @@ namespace API.Controllers
     /// <summary>
     /// Class for testing purposes
     /// </summary>
-    [AdminAuthenticationAttribute]
+    [BasicAuthenticationAttribute(true)]
     public class UserController : ApiController
     {
         private IUserService userService;

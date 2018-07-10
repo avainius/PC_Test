@@ -9,7 +9,6 @@ using System.Web.Http;
 
 namespace API.Controllers
 {
-    [BasicAuthenticationAttribute]
     public class ProjectController : ApiController
     {
         private IUserService userService;
@@ -23,14 +22,14 @@ namespace API.Controllers
         }
 
         [HttpPost]
-        [AdminAuthenticationAttribute]
+        [BasicAuthenticationAttribute(true)]
         public void CreateProject([FromBody]Project project)
         {
             projectService.Create(project);
         }
 
         [HttpPost]
-        [AdminAuthenticationAttribute]
+        [BasicAuthenticationAttribute(true)]
         [Route("api/Project/AssignToUser/{userId}/{projectId}")]
         public User AssignToUser(int userId, int projectId)
         {
@@ -38,6 +37,7 @@ namespace API.Controllers
         }
 
         [Route("api/Project/GetMy")]
+        [BasicAuthenticationAttribute]
         public IEnumerable<Project> GetMyProjects()
         {
             var userName = Thread.CurrentPrincipal.Identity.Name;
@@ -45,7 +45,7 @@ namespace API.Controllers
         }
 
         [Route("api/Project/GetAll")]
-        [AdminAuthenticationAttribute]
+        [BasicAuthenticationAttribute(true)]
         public IEnumerable<Project> GetAll() => projectRepository.GetAll();
     }
 }

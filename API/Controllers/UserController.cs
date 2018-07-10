@@ -9,7 +9,10 @@ using DataAccess;
 
 namespace API.Controllers
 {
-    [BasicAuthenticationAttribute]
+    /// <summary>
+    /// Class for testing purposes
+    /// </summary>
+    [AdminAuthenticationAttribute]
     public class UserController : ApiController
     {
         private IUserService userService;
@@ -22,19 +25,16 @@ namespace API.Controllers
 
         [HttpGet]
         [Route("api/User/GetAll")]
-        [AdminAuthenticationAttribute]
         public List<User> GetAll() => DataManager.Users;
 
         [HttpPost]
         [Route("api/User/Update")]
-        [AdminAuthenticationAttribute]
         public void Update([FromBody]User user)
         {
             userService.Update(user);
         }
 
         [HttpGet]
-        [AdminAuthenticationAttribute]
         public void Delete(int? id)
         {
             if (id == null) return;

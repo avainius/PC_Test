@@ -60,6 +60,7 @@ namespace DataAccess.Services
         public User Register(User user)
         {
             if (Users.Any(c => c.Email == user.Email)) throw new Exception("A user with the specified email already exists");
+            if (string.IsNullOrEmpty(user.Email) || string.IsNullOrEmpty(user.Password)) throw new Exception("Our standards are low, we know, but please, enter at least one character");
             user.Id = Users.Any() ? Users.Max(c => c.Id) + 1 : 0;
             user.UserRole = Enums.Roles.Employee;
             CreateOrUpdate(user);

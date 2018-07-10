@@ -51,12 +51,10 @@ F:\GitHubRepositories\PC_Test\API\bin\roslyn\VBCSCompiler.exe
 F:\GitHubRepositories\PC_Test\API\bin\roslyn\VBCSCompiler.exe.config
 F:\GitHubRepositories\PC_Test\API\bin\DataAccess.dll
 F:\GitHubRepositories\PC_Test\API\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-F:\GitHubRepositories\PC_Test\API\bin\Newtonsoft.Json.dll
 F:\GitHubRepositories\PC_Test\API\bin\System.Net.Http.Formatting.dll
 F:\GitHubRepositories\PC_Test\API\bin\System.Web.Http.dll
 F:\GitHubRepositories\PC_Test\API\bin\System.Web.Http.WebHost.dll
 F:\GitHubRepositories\PC_Test\API\bin\DataAccess.pdb
-F:\GitHubRepositories\PC_Test\API\bin\Newtonsoft.Json.xml
 F:\GitHubRepositories\PC_Test\API\bin\System.Net.Http.Formatting.xml
 F:\GitHubRepositories\PC_Test\API\bin\System.Web.Http.xml
 F:\GitHubRepositories\PC_Test\API\bin\System.Web.Http.WebHost.xml
@@ -76,3 +74,5 @@ F:\GitHubRepositories\PC_Test\API\bin\PreMailer.Net.dll
 F:\GitHubRepositories\PC_Test\API\bin\SgmlReaderDll.dll
 F:\GitHubRepositories\PC_Test\API\bin\Thrift.dll
 F:\GitHubRepositories\PC_Test\API\bin\CsQuery.xml
+F:\GitHubRepositories\PC_Test\API\bin\Newtonsoft.Json.dll
+F:\GitHubRepositories\PC_Test\API\bin\Newtonsoft.Json.xml

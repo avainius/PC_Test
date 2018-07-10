@@ -8,6 +8,7 @@ namespace API
         public static void Register(HttpConfiguration config)
         {
             DataAccess.DataManager.Initialize();
+            Logger.Initialize();
             // Web API routes
             config.MapHttpAttributeRoutes();
 

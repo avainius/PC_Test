@@ -22,6 +22,21 @@ namespace API.Controllers
             userService = new UserService();
         }
 
+        [HttpPost]
+        [AdminAuthenticationAttribute]
+        public void CreateProject([FromBody]Project project)
+        {
+            projectService.Create(project);
+        }
+
+        [HttpPost]
+        [AdminAuthenticationAttribute]
+        [Route("api/Project/AssignToUser/{userId}/{projectId}")]
+        public User AssignToUser(int userId, int projectId)
+        {
+            return projectService.AssignToUser(userId, projectId);
+        }
+
         [Route("api/Project/GetMy")]
         public IEnumerable<Project> GetMyProjects()
         {
@@ -32,20 +47,5 @@ namespace API.Controllers
         [Route("api/Project/GetAll")]
         [AdminAuthenticationAttribute]
         public IEnumerable<Project> GetAll() => projectRepository.GetAll();
-
-        [HttpPost]
-        [AdminAuthenticationAttribute]
-        public void CreateProject([FromBody]Project project)
-        {
-            projectService.CreateOrUpdate(project);
-        }
-
-        [HttpPost]
-        [AdminAuthenticationAttribute]
-        [Route("api/Project/AssignToUser/{userId}/{projectId}")]
-        public User AssignToUser(int userId, int projectId)
-        {
-            return projectService.AssignToUser(userId, projectId);
-        }
     }
 }

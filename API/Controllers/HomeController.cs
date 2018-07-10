@@ -22,6 +22,7 @@ namespace API.Controllers
         [Route("api/Home/Register")]
         public void Register([FromBody]User user)
         {
+            Logger.Log($"Attempting to register user {user.Email}");
             userService.Register(user);
             EmailService.SendRegistrationInformation(user);
         }
@@ -30,7 +31,13 @@ namespace API.Controllers
         [Route("api/Home/Login")]
         public string Login([FromBody]User user)
         {
-            if (userService.Login(user)) return userService.GetToken(user);
+            if (userService.Login(user))
+            {
+                Logger.Log($"User {user.Email} logged in.");
+                return userService.GetToken(user);
+            }
+
+            Logger.Log($"User {user.Email} failed to login.");
             return null;
         }
     }
